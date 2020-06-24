@@ -1,7 +1,7 @@
 class CartItemsController < ApplicationController
   before_action :set_cart_item, only: [:show, :update, :destroy]
 
-  # GET /cart_items
+  # GET /cart_items 
   def index
     @cart_items = CartItem.all
 
