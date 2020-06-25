@@ -46,6 +46,6 @@ class MedicinesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def medicine_params
-      params.require(:medicine).permit(:name, :value, :quantity, :stock)
+      params.require(:medicine).permit(:name, :value, :quantity, :stock, :total)
     end
 end

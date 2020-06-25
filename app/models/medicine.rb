@@ -1,5 +1,8 @@
 class Medicine < ApplicationRecord
-    def total
-    value * quantity
-  end
+      self.result = self.value * self.quantity  
+    #before_validation :result_calc
+      
+    #def result_calc
+     # self.result = value * quantity
+    #end
 end
