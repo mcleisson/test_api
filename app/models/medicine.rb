@@ -1,10 +1,7 @@
 class Medicine < ApplicationRecord
-      before_validation :total
+      before_create :total
   def total
-
-
-    result += (medicine.value * medicine.quantity)
-    "#{result}"
+    self.value *= self.quantity
   end
   
   #value * quantity  
