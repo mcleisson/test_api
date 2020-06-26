@@ -3,7 +3,7 @@ class Customer < ApplicationRecord
     before_save :titleize_name
     
     def titleize_name
-        self.name = self.name.titleize #mostra primeira letra maiúscula a cada espaço.
+        self.name = self.name.titleize #altera a primeira letra para maiúscula.
         
     end
 
