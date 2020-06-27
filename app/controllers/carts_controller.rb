@@ -4,13 +4,13 @@ class CartsController < ApplicationController
   # GET /carts
   def index
     @carts = Cart.all
-
     render json: @carts
   end
 
   # GET /carts/1
   def show
-    render json: @cart
+    
+   render json: @cart
   end
 
   # POST /carts
